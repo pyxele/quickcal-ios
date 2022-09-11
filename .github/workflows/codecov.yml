@@ -1,6 +1,12 @@
 name: Codecov Action
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull:
+    branches:
+      - main
 
 jobs:
   build:
