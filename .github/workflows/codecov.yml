@@ -1,0 +1,14 @@
+name: Codecov Action
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Test
+        uses: actions/checkout@v1
+      - name: Build and Test
+        run:  xcodebuild test -project QuickCal.xcodeproj -scheme QuickCal -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.3' -enableCodeCoverage YES build test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.2.1
