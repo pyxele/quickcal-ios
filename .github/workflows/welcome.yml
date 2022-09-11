@@ -1,0 +1,14 @@
+name: Welcome
+
+on: [pull_request]
+
+jobs:  
+  test:
+    runs-on: macos-latest
+
+    steps:
+    - name: Welcome
+      uses: actions/first-interaction@v1.1.0
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        pr-message: Congratulations on making your first PR! A member from our team will review it shortly. Thank you for contributing!
