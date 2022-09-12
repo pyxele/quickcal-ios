@@ -14,30 +14,29 @@ class ContentViewUITests: XCTestCase {
     override func setUpWithError() throws {
         continueAfterFailure = false
         app.launch()
+        app.buttons["Add Entry"].tap()
         startingCellCount = app.cells.count
     }
 
     func testContentView() throws {
         let navigation = app.navigationBars.element
+        let caloryEntryButton = app.buttons["caloryEntryButton"].firstMatch
+
         XCTAssert(navigation.exists)
+        XCTAssert(caloryEntryButton.exists)
     }
 
     func testContentViewAddEntry() throws {
         app.buttons["Add Entry"].tap()
         XCTAssertGreaterThan(app.cells.count, startingCellCount)
-
-        let caloryEntryButton = app.buttons["caloryEntryButton"]
-        XCTAssert(caloryEntryButton.exists)
     }
 
     func testContentViewDeleteEntry() throws {
-        app.buttons["Add Entry"].tap()
-
         let cells = app.tables.cells
         let firstCell = cells.element(boundBy: 0)
-        firstCell.swipeLeft()
+        firstCell.swipeLeft(velocity: .slow)
         firstCell.buttons["Delete"].tap()
 
-        XCTAssertEqual(cells.count, startingCellCount)
+        XCTAssertLessThan(cells.count, startingCellCount)
     }
 }
