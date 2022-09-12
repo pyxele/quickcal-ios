@@ -19,7 +19,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(calorieEntries) { entry in
-                    NavigationLink (destination: {
+                    NavigationLink(destination: {
                         Text("Entry made at \(entry.timestamp ?? Date(), formatter: caloryEntryFormatter)")
                     }, label: {
                         Text(entry.timestamp ?? Date(), formatter: caloryEntryFormatter)
