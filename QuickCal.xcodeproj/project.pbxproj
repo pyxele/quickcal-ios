@@ -17,8 +17,6 @@
 		BE5B8D4F28CEF178009070B9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D4E28CEF178009070B9 /* Persistence.swift */; };
 		BE5B8D5128CEF4C7009070B9 /* PersistencePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D5028CEF4C7009070B9 /* PersistencePreview.swift */; };
 		BED06C4C28CEFBFC00671E7E /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED06C4B28CEFBFC00671E7E /* ExampleTests.swift */; };
-		BED06C4D28CEFD1A00671E7E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D4E28CEF178009070B9 /* Persistence.swift */; };
-		BED06C4E28CEFE0C00671E7E /* QuickCal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D2C28CEEE5F009070B9 /* QuickCal.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,8 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED06C4C28CEFBFC00671E7E /* ExampleTests.swift in Sources */,
-				BED06C4D28CEFD1A00671E7E /* Persistence.swift in Sources */,
-				BED06C4E28CEFE0C00671E7E /* QuickCal.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

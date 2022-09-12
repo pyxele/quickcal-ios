@@ -19,20 +19,20 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(calorieEntries) { entry in
-                    NavigationLink {
+                    NavigationLink (destination: {
                         Text("Entry made at \(entry.timestamp ?? Date(), formatter: caloryEntryFormatter)")
-                    } label: {
+                    }, label: {
                         Text(entry.timestamp ?? Date(), formatter: caloryEntryFormatter)
-                    }
+                    }).accessibilityIdentifier("caloryEntryButton")
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteEntry)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
                 ToolbarItem {
-                    Button(action: addItem) {
+                    Button(action: addEntry) {
                         Label("Add Entry", systemImage: "plus")
                     }
                 }
@@ -41,7 +41,7 @@ struct ContentView: View {
         }
     }
 
-    private func addItem() {
+    private func addEntry() {
         withAnimation {
             let newEntry = CalorieEntry(context: viewContext)
             newEntry.timestamp = Date()
@@ -49,7 +49,7 @@ struct ContentView: View {
         }
     }
 
-    private func deleteItems(offsets: IndexSet) {
+    private func deleteEntry(offsets: IndexSet) {
         withAnimation {
             offsets.map { calorieEntries[$0] }.forEach(viewContext.delete)
             try? viewContext.save()

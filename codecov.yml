@@ -2,10 +2,10 @@ coverage:
   status:
     project:
       default:
-        target: 95%
+        target: 80%
     patch:
       default:
-        target: 100%
+        target: 80%
 ignore:
     - "QuickCal/Previews"
     - "QuickCal/Persistence.swift"
