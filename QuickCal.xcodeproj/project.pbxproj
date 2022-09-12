@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE3DEE8A28CED208008CAB4F /* QuickCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DEE8928CED208008CAB4F /* QuickCalUITests.swift */; };
-		BE3DEE8C28CED208008CAB4F /* QuickCalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DEE8B28CED208008CAB4F /* QuickCalUITestsLaunchTests.swift */; };
+		BE3DEE8A28CED208008CAB4F /* ContentViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DEE8928CED208008CAB4F /* ContentViewUITests.swift */; };
 		BE3DEE9328CED8A2008CAB4F /* ContentViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DEE9228CED8A2008CAB4F /* ContentViewPreview.swift */; };
+		BE3DEE9828CEDE60008CAB4F /* CalorieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DEE9728CEDE60008CAB4F /* CalorieModel.swift */; };
 		BE4A376228CEAD7D00E3ADC1 /* QuickCalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A376128CEAD7D00E3ADC1 /* QuickCalApp.swift */; };
 		BE4A376428CEAD7D00E3ADC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A376328CEAD7D00E3ADC1 /* ContentView.swift */; };
 		BE4A376628CEAD7F00E3ADC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4A376528CEAD7F00E3ADC1 /* Assets.xcassets */; };
 		BE4A376928CEAD7F00E3ADC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4A376828CEAD7F00E3ADC1 /* Preview Assets.xcassets */; };
-		BE4A377328CEAD7F00E3ADC1 /* QuickCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A377228CEAD7F00E3ADC1 /* QuickCalTests.swift */; };
+		BE4A377328CEAD7F00E3ADC1 /* CalorieModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A377228CEAD7F00E3ADC1 /* CalorieModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,16 +36,16 @@
 
 /* Begin PBXFileReference section */
 		BE3DEE8728CED208008CAB4F /* QuickCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE3DEE8928CED208008CAB4F /* QuickCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCalUITests.swift; sourceTree = "<group>"; };
-		BE3DEE8B28CED208008CAB4F /* QuickCalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BE3DEE8928CED208008CAB4F /* ContentViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewUITests.swift; sourceTree = "<group>"; };
 		BE3DEE9228CED8A2008CAB4F /* ContentViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewPreview.swift; sourceTree = "<group>"; };
+		BE3DEE9728CEDE60008CAB4F /* CalorieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieModel.swift; sourceTree = "<group>"; };
 		BE4A375E28CEAD7D00E3ADC1 /* QuickCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4A376128CEAD7D00E3ADC1 /* QuickCalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCalApp.swift; sourceTree = "<group>"; };
 		BE4A376328CEAD7D00E3ADC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE4A376528CEAD7F00E3ADC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE4A376828CEAD7F00E3ADC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE4A376E28CEAD7F00E3ADC1 /* QuickCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE4A377228CEAD7F00E3ADC1 /* QuickCalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCalTests.swift; sourceTree = "<group>"; };
+		BE4A377228CEAD7F00E3ADC1 /* CalorieModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,7 @@
 		BE3DEE8828CED208008CAB4F /* QuickCalUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BE3DEE8928CED208008CAB4F /* QuickCalUITests.swift */,
-				BE3DEE8B28CED208008CAB4F /* QuickCalUITestsLaunchTests.swift */,
+				BE3DEE8928CED208008CAB4F /* ContentViewUITests.swift */,
 			);
 			path = QuickCalUITests;
 			sourceTree = "<group>";
@@ -96,6 +95,14 @@
 				BE3DEE9228CED8A2008CAB4F /* ContentViewPreview.swift */,
 			);
 			path = Previews;
+			sourceTree = "<group>";
+		};
+		BE3DEE9628CEDE28008CAB4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE3DEE9728CEDE60008CAB4F /* CalorieModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BE4A375528CEAD7D00E3ADC1 = {
@@ -122,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				BE4A376128CEAD7D00E3ADC1 /* QuickCalApp.swift */,
+				BE3DEE9628CEDE28008CAB4F /* Models */,
 				BE3DEE9428CED8F0008CAB4F /* Views */,
 				BE3DEE9528CED8F7008CAB4F /* Previews */,
 				BE4A376528CEAD7F00E3ADC1 /* Assets.xcassets */,
@@ -133,7 +141,7 @@
 		BE4A377128CEAD7F00E3ADC1 /* QuickCalTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE4A377228CEAD7F00E3ADC1 /* QuickCalTests.swift */,
+				BE4A377228CEAD7F00E3ADC1 /* CalorieModelTests.swift */,
 			);
 			path = QuickCalTests;
 			sourceTree = "<group>";
@@ -268,8 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3DEE8C28CED208008CAB4F /* QuickCalUITestsLaunchTests.swift in Sources */,
-				BE3DEE8A28CED208008CAB4F /* QuickCalUITests.swift in Sources */,
+				BE3DEE8A28CED208008CAB4F /* ContentViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4A376428CEAD7D00E3ADC1 /* ContentView.swift in Sources */,
+				BE3DEE9828CEDE60008CAB4F /* CalorieModel.swift in Sources */,
 				BE3DEE9328CED8A2008CAB4F /* ContentViewPreview.swift in Sources */,
 				BE4A376228CEAD7D00E3ADC1 /* QuickCalApp.swift in Sources */,
 			);
@@ -287,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4A377328CEAD7F00E3ADC1 /* QuickCalTests.swift in Sources */,
+				BE4A377328CEAD7F00E3ADC1 /* CalorieModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
