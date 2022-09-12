@@ -17,7 +17,7 @@ class ContentViewUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        let welcomeText = app.staticTexts["Welcome!"]
-        XCTAssert(welcomeText.exists)
+        let cells = app.tables.cells
+        XCTAssertGreaterThan(cells.count, 0)
     }
 }

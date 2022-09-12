@@ -8,3 +8,6 @@ coverage:
         target: 100%
 ignore:
     - "QuickCal/Previews"
+    - "QuickCal/Persistence.swift"
+    - "QuickCalTests"
+    - "QuickCalUITests"
