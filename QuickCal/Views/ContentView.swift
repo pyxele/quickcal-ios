@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    
+
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \CalorieEntry.timestamp, ascending: true)],
         animation: .default)
     private var calorieEntries: FetchedResults<CalorieEntry>
-    
+
     var body: some View {
         NavigationView {
             List {
@@ -40,7 +40,7 @@ struct ContentView: View {
             Text("Select an entry")
         }
     }
-    
+
     private func addItem() {
         withAnimation {
             let newEntry = CalorieEntry(context: viewContext)
