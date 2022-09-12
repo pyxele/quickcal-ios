@@ -39,6 +39,16 @@
                ReferencedContainer = "container:QuickCal.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BE3DEE8628CED208008CAB4F"
+               BuildableName = "QuickCalUITests.xctest"
+               BlueprintName = "QuickCalUITests"
+               ReferencedContainer = "container:QuickCal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
