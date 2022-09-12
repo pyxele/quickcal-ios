@@ -5,7 +5,7 @@ coverage:
         target: 80%
     patch:
       default:
-        target: 80%
+        target: 90%
 ignore:
     - "QuickCal/Previews"
     - "QuickCal/Persistence.swift"
