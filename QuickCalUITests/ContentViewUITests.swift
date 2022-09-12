@@ -17,7 +17,7 @@ class ContentViewUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        let cells = app.tables.cells
-        XCTAssertGreaterThan(cells.count, 0)
+        let navigation = app.navigationBars.element
+        XCTAssert(navigation.exists)
     }
 }
