@@ -34,3 +34,12 @@ Please follow the general code structure below.
     └── *.swift
 ```
 *Not all folders or files are shown.*
+
+## Technologies Used
+|        Name  |              Description           |
+|---------------|-------------------------------|
+|[Codecov](https://about.codecov.io)        |Provides code coverage with different thresholds.|
+|[CoreData](https://developer.apple.com/documentation/coredata)        |Persist or cache data on a single device, or sync data to multiple devices with CloudKit.|
+|[GitHub Actions](https://github.com/features/actions)        |Continuous integration and continuous delivery (CI/CD) platform.|
+|[Swiftlint](https://github.com/realm/SwiftLint)        |A tool to enforce Swift style and conventions.|
+|[SwiftUI](https://developer.apple.com/xcode/swiftui/)        |user interface toolkit that lets us design apps in a declarative way.|
