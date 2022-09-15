@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE1A694428D2D83B00642D52 /* CalorieEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A694328D2D83B00642D52 /* CalorieEntryView.swift */; };
 		BE3DEE8A28CED208008CAB4F /* ContentViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DEE8928CED208008CAB4F /* ContentViewUITests.swift */; };
 		BE3DEE9328CED8A2008CAB4F /* ContentViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DEE9228CED8A2008CAB4F /* ContentViewPreview.swift */; };
 		BE4A376228CEAD7D00E3ADC1 /* QuickCalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A376128CEAD7D00E3ADC1 /* QuickCalApp.swift */; };
@@ -16,7 +15,8 @@
 		BE4A376928CEAD7F00E3ADC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4A376828CEAD7F00E3ADC1 /* Preview Assets.xcassets */; };
 		BE5B8D2E28CEEE5F009070B9 /* QuickCal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D2C28CEEE5F009070B9 /* QuickCal.xcdatamodeld */; };
 		BE5B8D4F28CEF178009070B9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D4E28CEF178009070B9 /* Persistence.swift */; };
-		BE5B8D5128CEF4C7009070B9 /* PersistencePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D5028CEF4C7009070B9 /* PersistencePreview.swift */; };
+		BE8DD36728D2E8DE0017C8CB /* CalorieEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD36628D2E8DE0017C8CB /* CalorieEntryView.swift */; };
+		BE8DD36928D2E9F70017C8CB /* CalorieEntryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD36828D2E9F70017C8CB /* CalorieEntryPreview.swift */; };
 		BED06C4C28CEFBFC00671E7E /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED06C4B28CEFBFC00671E7E /* ExampleTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE1A694328D2D83B00642D52 /* CalorieEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntryView.swift; sourceTree = "<group>"; };
 		BE3DEE8728CED208008CAB4F /* QuickCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3DEE8928CED208008CAB4F /* ContentViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewUITests.swift; sourceTree = "<group>"; };
 		BE3DEE9228CED8A2008CAB4F /* ContentViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewPreview.swift; sourceTree = "<group>"; };
@@ -50,7 +49,8 @@
 		BE4A376E28CEAD7F00E3ADC1 /* QuickCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B8D2D28CEEE5F009070B9 /* QuickCal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuickCal.xcdatamodel; sourceTree = "<group>"; };
 		BE5B8D4E28CEF178009070B9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		BE5B8D5028CEF4C7009070B9 /* PersistencePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencePreview.swift; sourceTree = "<group>"; };
+		BE8DD36628D2E8DE0017C8CB /* CalorieEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntryView.swift; sourceTree = "<group>"; };
+		BE8DD36828D2E9F70017C8CB /* CalorieEntryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntryPreview.swift; sourceTree = "<group>"; };
 		BED06C4B28CEFBFC00671E7E /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				BE4A376328CEAD7D00E3ADC1 /* ContentView.swift */,
-				BE1A694328D2D83B00642D52 /* CalorieEntryView.swift */,
+				BE8DD36628D2E8DE0017C8CB /* CalorieEntryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BE3DEE9228CED8A2008CAB4F /* ContentViewPreview.swift */,
-				BE5B8D5028CEF4C7009070B9 /* PersistencePreview.swift */,
+				BE8DD36828D2E9F70017C8CB /* CalorieEntryPreview.swift */,
 			);
 			path = Previews;
 			sourceTree = "<group>";
@@ -286,13 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5B8D5128CEF4C7009070B9 /* PersistencePreview.swift in Sources */,
 				BE4A376428CEAD7D00E3ADC1 /* ContentView.swift in Sources */,
 				BE3DEE9328CED8A2008CAB4F /* ContentViewPreview.swift in Sources */,
 				BE5B8D4F28CEF178009070B9 /* Persistence.swift in Sources */,
 				BE4A376228CEAD7D00E3ADC1 /* QuickCalApp.swift in Sources */,
 				BE5B8D2E28CEEE5F009070B9 /* QuickCal.xcdatamodeld in Sources */,
-				BE1A694428D2D83B00642D52 /* CalorieEntryView.swift in Sources */,
+				BE8DD36728D2E8DE0017C8CB /* CalorieEntryView.swift in Sources */,
+				BE8DD36928D2E9F70017C8CB /* CalorieEntryPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

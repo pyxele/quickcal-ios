@@ -2,19 +2,19 @@
 //  CalorieEntryView.swift
 //  QuickCal
 //
-//  Created by Will Boland on 9/14/22.
+//  Created by Will Boland on 9/15/22.
 //
 
 import SwiftUI
 
 struct CalorieEntryView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    var entry: CalorieEntry
 
-struct CalorieEntryView_Previews: PreviewProvider {
-    static var previews: some View {
-        CalorieEntryView()
+    var body: some View {
+        VStack {
+            Text(entry.title ?? "")
+            Text("\(entry.amount ?? 0)")
+            Text("\(entry.timestamp ?? Date())")
+        }
     }
 }

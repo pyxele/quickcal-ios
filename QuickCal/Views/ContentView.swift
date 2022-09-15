@@ -19,9 +19,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(calorieEntries) { entry in
-                    NavigationLink(destination: {
-                        Text("Entry made at \(entry.timestamp ?? Date(), formatter: calorieEntryFormatter)")
-                    }, label: {
+                    NavigationLink(destination: CalorieEntryView(entry: entry), label: {
                         Text(entry.timestamp ?? Date(), formatter: calorieEntryFormatter)
                     }).accessibilityIdentifier("calorieEntryButton")
                 }
