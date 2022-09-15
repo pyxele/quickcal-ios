@@ -15,7 +15,7 @@ struct PersistenceController {
         let viewContext = result.container.viewContext
         for index in 0..<10 {
             let newItem = CalorieEntry(context: viewContext)
-            newItem.title = "Calorie \(index)"
+            newItem.title = "Hamburger#\(index)"
             newItem.amount = 100
             newItem.timestamp = Date()
         }

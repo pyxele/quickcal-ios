@@ -18,7 +18,7 @@ class ContentViewUITests: XCTestCase {
         startingCellCount = app.cells.count
     }
 
-    func testContentView() throws {
+    func testExists() throws {
         let navigation = app.navigationBars.element
         let caloryEntryButton = app.buttons["calorieEntryButton"].firstMatch
 
@@ -26,12 +26,12 @@ class ContentViewUITests: XCTestCase {
         XCTAssert(caloryEntryButton.exists)
     }
 
-    func testContentViewAddEntry() throws {
+    func testAddEntry() throws {
         app.buttons["Add Entry"].tap()
         XCTAssertGreaterThan(app.cells.count, startingCellCount)
     }
 
-    func testContentViewDeleteEntry() throws {
+    func testDeleteEntry() throws {
         let cells = app.tables.cells
         let firstCell = cells.element(boundBy: 0)
         firstCell.swipeLeft(velocity: .slow)
