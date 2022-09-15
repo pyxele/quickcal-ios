@@ -15,7 +15,10 @@
 		BE4A376928CEAD7F00E3ADC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4A376828CEAD7F00E3ADC1 /* Preview Assets.xcassets */; };
 		BE5B8D2E28CEEE5F009070B9 /* QuickCal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D2C28CEEE5F009070B9 /* QuickCal.xcdatamodeld */; };
 		BE5B8D4F28CEF178009070B9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D4E28CEF178009070B9 /* Persistence.swift */; };
-		BE5B8D5128CEF4C7009070B9 /* PersistencePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8D5028CEF4C7009070B9 /* PersistencePreview.swift */; };
+		BE8DD36728D2E8DE0017C8CB /* CalorieEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD36628D2E8DE0017C8CB /* CalorieEntryView.swift */; };
+		BE8DD36928D2E9F70017C8CB /* CalorieEntryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD36828D2E9F70017C8CB /* CalorieEntryPreview.swift */; };
+		BE8DD38A28D2F49E0017C8CB /* CalorieEntryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD38928D2F49E0017C8CB /* CalorieEntryList.swift */; };
+		BE8DD38C28D2FA440017C8CB /* CalorieEntryListPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD38B28D2FA440017C8CB /* CalorieEntryListPreview.swift */; };
 		BED06C4C28CEFBFC00671E7E /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED06C4B28CEFBFC00671E7E /* ExampleTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +51,10 @@
 		BE4A376E28CEAD7F00E3ADC1 /* QuickCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B8D2D28CEEE5F009070B9 /* QuickCal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuickCal.xcdatamodel; sourceTree = "<group>"; };
 		BE5B8D4E28CEF178009070B9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		BE5B8D5028CEF4C7009070B9 /* PersistencePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencePreview.swift; sourceTree = "<group>"; };
+		BE8DD36628D2E8DE0017C8CB /* CalorieEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntryView.swift; sourceTree = "<group>"; };
+		BE8DD36828D2E9F70017C8CB /* CalorieEntryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntryPreview.swift; sourceTree = "<group>"; };
+		BE8DD38928D2F49E0017C8CB /* CalorieEntryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntryList.swift; sourceTree = "<group>"; };
+		BE8DD38B28D2FA440017C8CB /* CalorieEntryListPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntryListPreview.swift; sourceTree = "<group>"; };
 		BED06C4B28CEFBFC00671E7E /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				BE4A376328CEAD7D00E3ADC1 /* ContentView.swift */,
+				BE8DD36628D2E8DE0017C8CB /* CalorieEntryView.swift */,
+				BE8DD38928D2F49E0017C8CB /* CalorieEntryList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,7 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				BE3DEE9228CED8A2008CAB4F /* ContentViewPreview.swift */,
-				BE5B8D5028CEF4C7009070B9 /* PersistencePreview.swift */,
+				BE8DD36828D2E9F70017C8CB /* CalorieEntryPreview.swift */,
+				BE8DD38B28D2FA440017C8CB /* CalorieEntryListPreview.swift */,
 			);
 			path = Previews;
 			sourceTree = "<group>";
@@ -283,12 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5B8D5128CEF4C7009070B9 /* PersistencePreview.swift in Sources */,
 				BE4A376428CEAD7D00E3ADC1 /* ContentView.swift in Sources */,
 				BE3DEE9328CED8A2008CAB4F /* ContentViewPreview.swift in Sources */,
 				BE5B8D4F28CEF178009070B9 /* Persistence.swift in Sources */,
 				BE4A376228CEAD7D00E3ADC1 /* QuickCalApp.swift in Sources */,
 				BE5B8D2E28CEEE5F009070B9 /* QuickCal.xcdatamodeld in Sources */,
+				BE8DD38C28D2FA440017C8CB /* CalorieEntryListPreview.swift in Sources */,
+				BE8DD36728D2E8DE0017C8CB /* CalorieEntryView.swift in Sources */,
+				BE8DD38A28D2F49E0017C8CB /* CalorieEntryList.swift in Sources */,
+				BE8DD36928D2E9F70017C8CB /* CalorieEntryPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
