@@ -20,7 +20,7 @@ class ContentViewUITests: XCTestCase {
 
     func testContentView() throws {
         let navigation = app.navigationBars.element
-        let caloryEntryButton = app.buttons["caloryEntryButton"].firstMatch
+        let caloryEntryButton = app.buttons["calorieEntryButton"].firstMatch
 
         XCTAssert(navigation.exists)
         XCTAssert(caloryEntryButton.exists)

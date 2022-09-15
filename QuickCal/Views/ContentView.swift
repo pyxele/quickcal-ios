@@ -20,10 +20,10 @@ struct ContentView: View {
             List {
                 ForEach(calorieEntries) { entry in
                     NavigationLink(destination: {
-                        Text("Entry made at \(entry.timestamp ?? Date(), formatter: caloryEntryFormatter)")
+                        Text("Entry made at \(entry.timestamp ?? Date(), formatter: calorieEntryFormatter)")
                     }, label: {
-                        Text(entry.timestamp ?? Date(), formatter: caloryEntryFormatter)
-                    }).accessibilityIdentifier("caloryEntryButton")
+                        Text(entry.timestamp ?? Date(), formatter: calorieEntryFormatter)
+                    }).accessibilityIdentifier("calorieEntryButton")
                 }
                 .onDelete(perform: deleteEntry)
             }
@@ -57,7 +57,7 @@ struct ContentView: View {
     }
 }
 
-private let caloryEntryFormatter: DateFormatter = {
+private let calorieEntryFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .short
     formatter.timeStyle = .medium
